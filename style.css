@@ -1,0 +1,156 @@
+
+/* @font-face {
+  font-family: 'Druk Cyr';
+  src: local('Druk Cyr Medium'), local('Druk-Cyr-Medium'),
+      url('DrukCyr-Medium.woff2') format('woff2'),
+      url('DrukCyr-Medium.woff') format('woff'),
+      url('DrukCyr-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+} */
+@font-face {
+  font-family: Druk Cyr;
+  src: url("../fonts/DrukCyr-Medium.ttf") format("truetype");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* 
+{
+  margin: 0;
+  padding: 0;
+}
+
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.form-CV {
+  width: 100%;
+  background-image: url("img/Шар 1.png ");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  height: 1900px;
+}
+
+.form-block {
+  display: flex;
+  justify-content: center;
+}
+
+.form-header__CV{
+  font-size: 50px;
+  font-family: "Druk Cyr";
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 4px;
+  display: flex;
+  text-align: justify;
+  justify-content: center;
+  -moz-transform: matrix( 1.82040770052273,0,0,1.82040770052273,0,0);
+  -webkit-transform: matrix( 1.82040770052273,0,0,1.82040770052273,0,0);
+  -ms-transform: matrix( 1.82040770052273,0,0,1.82040770052273,0,0);
+  margin-top: 140px;
+
+  transform: scaleX(3);
+}
+
+.form-input {
+  margin-top: 73px;
+}
+
+.form-input input{
+  border-width: 18px;
+  border-color: #000;
+  height: 100px;
+  width: 540px;
+  background: transparent;
+}
+.form-input input::placeholder {
+  color: #000;
+  font-weight: 700;
+  letter-spacing: 4px;
+  font-size: 45px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.2;
+  font-family: "Druk Cyr";
+}
+
+.form-button__submit {
+  margin-top: 40px;
+  margin-left: 370px;
+  font-size: 30px;
+  font-weight: 900;
+  background: transparent;
+  border-width: 6px;
+  border-color: #000;
+  background: transparent;
+}
